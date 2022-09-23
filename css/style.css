@@ -283,9 +283,6 @@ a {
 .about-desription :not(:last-child) {
     margin-right: 30px;
 }
-.about-desription :last-child {
-    margin-left: 0px;
-}
 .about-item.wrap {
     display: flex;
     justify-content: center;
