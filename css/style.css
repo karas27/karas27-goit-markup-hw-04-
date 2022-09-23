@@ -5,6 +5,8 @@
             --accent-color: #2196F3;
             --white-color: #FFFFFF;
             --background-color: #2F303A;
+            --second-background-color: #F5F4FA;
+            --svg-color: #AFB1B8;
             --card-set-gap: 30px;
 }
 html {
@@ -53,6 +55,7 @@ a {
 .hero.section {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
 }
 .container {
     width: 1200px;
@@ -153,6 +156,8 @@ a {
     color: var(--accent-color);
 }
 .contact-link {
+    display: flex;
+    align-items: center;
     color: var(--primary-text-color);
     fill: var(--primary-text-color);
     padding-top: 32px;
@@ -191,7 +196,6 @@ a {
     line-height: 1.714;
 }
 .footer-link {
-    color: var(--primary-text-color);
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -223,6 +227,9 @@ a {
 .bg-icon {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+}
+.white {
+    fill: var(--white-color);
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!STUDIO PAGE!!!!!!!!!!!!!!!!!!!!!*/
 /*                                      HERO SECTION                 */
@@ -283,7 +290,7 @@ a {
     padding-top: 25px;
     padding-left: 100px;
     margin-bottom: 30px;
-    background-color: #F5F4FA;
+    background-color: var(--second-background-color);
     border-radius: 4px;
 }
 .about-list {
@@ -310,7 +317,7 @@ a {
     margin-left: var(--card-set-gap);
 }
 .ourteam {
-    background-color: #F5F4FA;;
+    background-color: var(--second-background-color);
 }
 .ourteam-descraption {
     display: flex;
@@ -357,7 +364,7 @@ a {
     justify-content: center;
     height: 44px;
     width: 44px;
-    fill: #AFB1B8;
+    fill: var(--svg-color);
     border-radius: 50%;
 }
 
@@ -405,9 +412,9 @@ a {
     justify-content: center;
     width: 170px;
     height: 92px;
-    fill: #AFB1B8;
+    fill: var(--svg-color);
     border-radius: 4px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--svg-color);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -431,7 +438,7 @@ a {
 .typeofproduct-description :last-child{
     margin-right: 0px;
 }
-.typeofproduct-item :hover {
+.typeofproduct-item :hover , .typeofproduct-item :focus{
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
@@ -446,7 +453,7 @@ a {
     padding-left: 25px;
     padding-right: 25px;
     font-family: Roboto;
-    background: #F5F4FA;
+    background: var(--second-background-color);
     font-size: 16px;
     font-weight: 500;
     border-radius: 4px;
