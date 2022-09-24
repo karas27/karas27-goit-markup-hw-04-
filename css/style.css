@@ -277,16 +277,21 @@ a {
 }
 .about-desription {
     display: flex;
-    margin: 0px;
+    justify-content: center;
+    gap:30px;
     padding: 0px;
 }
-.about-desription :not(:last-child) {
-    margin-right: 30px;
-}
-.about-item.wrap {
+.about-svg-icons {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+}
+.about-list-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
@@ -294,7 +299,7 @@ a {
     border-radius: 4px;
 }
 .about-list {
-    margin: 0px;
+    width: 270px;
 }
 .about-titel {
     font-weight: 700;
